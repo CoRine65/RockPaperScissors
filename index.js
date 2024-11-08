@@ -17,7 +17,34 @@ function getComputerChoice(){
             return 'scissor';
             break;
     }
+}
 
+function getHumanChoice(){
+
+    let choice;
+
+    while (true){
+    choice = prompt("Please input you choice of: rock, paper, scissor. (lower case)");
+
+        switch (choice){
+
+            case 'rock':
+                return 'you picked: rock';
+                break;
+        
+            case 'paper':
+                return 'you picked: paper';
+                break;
+
+            case 'scissor':
+                return 'you picked: scissor';
+                break;
+
+            default:
+                return "invalid input, try again";
+
+        }
+    }
 
 
 
